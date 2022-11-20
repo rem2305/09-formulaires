@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Les Formulaires</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+
+        <body>
+
+            <h1>Les Formulaires</h1>
+            
+            <form action="" method="post">
+
+                <label for="prenom">Prénom</label><br>
+                <input id ="prenom" type="text" placeholder="Saisir un prénom" value="Rem" name="">
+
+                <br>
+
+                <label for="mdp">Mot de passe</label><br>
+                <input id="mdp" type="password" placeholder="Saisir un mot de passe" valur="" name="">
+
+                <br>
+
+                <label for="codepostal">Code postal</label><br>
+                <input id="codepostal" type="number" placeholder="Saisir les 5 chiffres du code postal" value="" name="">
+
+                <br>
+
+                <label for="homme">Homme</label>
+                <input id="homme" type="radio" value="m" name="sexe" checked><br>
+                <label for="femme">Femme</label>
+                <input id="femme" type="radio" value="f" name="sexe">
+                
+                <br>
+
+                <label for="langue">Langues informatiques</label><br>
+                <input type="checkbox" name="" id="langue" value="html">HTML
+                <input type="checkbox" name="" id="langue" value="css">CSS
+                <input type="checkbox" name="" id="langue" value="js">JS
+                <input type="checkbox" name="" id="langue" value="php">PHP
+
+                <br>
+
+                <label for="image">Image</label><br>
+                <input type="file" name="" id="image" multiple>
+
+                <br>
+
+                <label for="naissance">Date de naissance</label><br>
+                <input type="date" name="" id="naissance">
+
+                <br>
+
+                <label for="couleur">Couleur</label><br>
+                <input type="color" name="" id="couleur">
+
+                <br>
+
+                <input type="hidden" name="" value="haha">
+
+                <br>
+
+                <label for="range">Range</label><br>
+                <input type="range" name="" id="range" min="0" max="100" value="10">
+
+                <br>
+
+                <input type="submit" value="ajouter" name="" id="">
+                <button type="submit">Modifier</button>
+
+                <br>
+
+                <label for="description">Description</label><br>
+                <textarea name="" id="description" cols="30" rows="10" placeholder="décrivez votre projet"></textarea>
+
+                <br>
+
+                <label for="categorie">Catégorie</label><br>
+
+                <select name="categorie" id="categorie">
+                    <option value="Saisir la catégorie" disabled selected>Saisir la catégorie</option>
+                    <option value="bague">Bague</option>
+                    <option value="bracelet">BRacelet</option>
+                    <option value="collier">Collier</option>
+                    <option value="montre">Montre</option>
+
+                </select>
+
+            </form>
+
+      5    <!--
+                Un formulaire est le seul moyen d'intéragir sur un site
+                tous les éléments d'un formulaire se place entre les balises <form></form>
+                (la réception des données se fait avec PHP)
+
+                sur la balise <form>
+                attribut method => manière d'envoyer les données en PHP
+                attribut action => redirection après soumission
+
+                élément label : "titre" de l'input
+                Liaison entre le label et son input via les attributs respectifs 
+                for="" pour le label et id="" pour l'input
+
+                la valeur des 2 doit être identique
+
+                lorsque l'on clique sur le label, on se retrouve dans l'input
+
+                élément Input :
+                    -balise orpheline
+                        attributs :
+                            -type : ce qui détermine la nature de l'input
+                                -text
+                                -password
+                                -number
+                                -radio (une valeur uniquement)
+                                -checkbox (plusieurs valeurs)
+                                -file
+                                -date
+                                -color
+                                -hidden
+                                -submit
+
+                élément textarea :
+                    boite plus grande et flexible avec des attributs rows et cols pour définir une taille de base
+                
+                 élément select :
+                    permet de saisir une option, c'est une liste déroulante
+
+                        attriburt : selected
+
+    
+                            -placeholder : une donnée écrite dans l'input mais qui n'est pas une valeur mais une indication
+                            
+                            -value : c'est une valeur (exemple formulaire de modification)
+
+                            -name : obligatoire pour le traitement du formulaire (PHP)
+
+                            -checked : permet de cocher (cet attribut n'a pas besoin de valeur)
+
+                            -multiple : permet plusieurs saisies (exemple file)
+
+                            -selected : sélectionner une option dans un menu select
+
+                            -disabled : verrouiller l'élément (grisé)
+
+                            -required : fausse sécurité
+
+            -->
+            
+        </body>
+
+    </html>

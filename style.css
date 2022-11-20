@@ -1,0 +1,51 @@
+*{
+padding: 0;
+margin: 0;
+}
+    h1{
+    text-align: center;
+    color: blueviolet;
+}
+form{
+width: 600px;
+border: 1px grey solid;
+border-radius: 15px;
+text-align: center;
+margin: 10px auto;
+padding: 15px;
+
+}
+
+input, textarea, select, button{
+width: 500px;
+text-align: center;
+border-radius: 10px;
+margin: 10px;
+background-color: whitesmoke;
+}
+input[type=file]{
+width: 250px;
+    margin:  10px 10px;
+    padding: 0px;
+}
+input[type=checkbox]{
+    width: 20px;
+    margin:  10px 10px;
+    padding: 0px;
+}
+input[type=radio]{
+    width: 20%;
+    margin:  10px 10px;
+    padding: 0px;
+    
+}
+label[for=langue],[for=prenom],[for=mdp],[for=codepostal],[for=homme],[for=femme],[for=image],[for=naissance],[for=couleur],[for=range],[for=description],[for=categorie]{
+    width: 200px;
+    padding: 2px 100px 2px 100px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(156, 149, 223);
+    border-radius: 10px;
+}
+
